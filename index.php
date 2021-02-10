@@ -17,3 +17,31 @@
  *
  * 5. Invoquez la méthode vous permettant de récupérer le nombre total d'abonnements aux plateformes VOD de manière à afficher le nombre total d'abonnements.
  */
+
+require './classes/Vod.php';
+
+//instance $netflix
+$netflix = new Vod();
+Vod::addUser();
+
+//instance $prime
+$prime = new Vod();
+Vod::addUser();
+
+//instance $crunchyroll
+$crunchyroll = new Vod();
+Vod::addUser();
+
+//instance $adn
+$adn = new Vod();
+Vod::addUser();
+
+//$disney
+$disney = new Vod();
+Vod::addUser();
+
+//instance $wakanim
+$wakanim = new Vod();
+Vod::addUser();
+
+echo "Vous avez" ."<br>" . Vod::getUser() . "<br>" . "abonnés !";
